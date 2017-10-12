@@ -1,0 +1,9 @@
+cppsocket.o: cppsocket.cpp cppsocket.h
+tcpserver.o: tcpserver.cpp tcpserver.h cppsocket.h
+database.o: database.cpp database.h multimedia.h photo.h video.h film.h \
+  groupe.h tcpserver.h cppsocket.h
+groupe.o: groupe.cpp groupe.h multimedia.h
+film.o: film.cpp film.h video.h multimedia.h
+multimedia.o: multimedia.cpp multimedia.h
+main.o: main.cpp tcpserver.h cppsocket.h database.h multimedia.h photo.h \
+  video.h film.h groupe.h
